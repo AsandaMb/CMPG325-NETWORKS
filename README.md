@@ -18,11 +18,11 @@
 ---
 
 ## 1) Five basic topologies (quick builds)
-Each folder contains a `.mmd` diagram (rendered on GitHub). Recreate them in Packet Tracer with 3–5 devices each and straight‑through copper links.
+Each folder contains a `.ptk` diagram (rendered on GitHub). Recreate them in Packet Tracer with 3–5 devices each and straight‑through copper links.
 
 ### 1.1 Bus
 - 1 switch acts as a shared medium; connect PC1—PC3 in a line.
-- Assign IPs in 192.168.1.0/24 and test pings.
+- Assign IPs in 192.168.1.10 and test pings.
 
 ### 1.2 Mesh
 - Use three routers in a triangle; run static routes or RIP for simplicity.
