@@ -4,8 +4,7 @@
 ## What to build
 1. **Five basic topologies** in Packet Tracer: **Bus, Mesh, Star, Ring, Extended Star**  
 2. **One hybrid topology** that integrates elements above, **IPv4 & IPv6**, **VLAN segmentation**, **HTTP/DNS/DHCP server**, and **basic security**.
-3. Provide **documentation** (README, IP tables, screenshots) and **configuration notes**.
-
+3. Provide **documentation** (README, IP tables, screenshots) and **configuration notes in ,cfg fomat**.
 > Server choice: **HTTP** (with DNS).
 
 ---
