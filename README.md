@@ -81,3 +81,30 @@ Place your screenshots in `assets/my_screens/` when done.
 ## 3) Evidence & GitHub
 - Commit all configs, CSV tables, and screenshots.
 - In the README, link to your test screenshots and include a short reflection (what worked, problems, fixes).
+
+
+# Part II — Configure Default Routes to a Central Router (20%)
+
+Goal: All branch LANs use **R-CORE** as their path to the Internet.  
+R-CORE forwards unknown traffic to the **ISP** (simulated by a stub router).
+
+## Steps
+1. On **R-BR1** and **R-BR2**, configure a default route *towards R-CORE*:
+   ```
+   R-BR1(config)# ip route 0.0.0.0 0.0.0.0 10.255.1.1
+   R-BR1(config)# ipv6 route ::/0 2001:DB8:255:1::1
+   R-BR2(config)# ip route 0.0.0.0 0.0.0.0 10.255.1.5
+   R-BR2(config)# ipv6 route ::/0 2001:DB8:255:1::5
+   ```
+2. On **R-CORE**, forward to ISP:
+   ```
+   R-CORE(config)# ip route 0.0.0.0 0.0.0.0 10.255.1.2
+   R-CORE(config)# ipv6 route ::/0 2001:DB8:255:1::2
+   ```
+3. Verify from a branch PC:
+   - `tracert 8.8.8.8` should show R-BR → R-CORE → ISP.
+   - Load `http://www.nwu.local` (proves DNS traversal towards VLAN30).
+
+Add screenshots to `assets/my_screens/` and reference them in your README.
+
+
