@@ -1,0 +1,18 @@
+Packet Tracer Server: SRV1 (HTTP + DNS)
+------------------------------------------------
+NIC:
+  IP: 10.10.30.10
+  Mask: 255.255.255.0
+  Gateway: 10.10.30.1
+  DNS: 10.10.30.10 (self)
+
+Services tab:
+  - HTTP: ON
+  - DNS: ON
+    Record A: 'www.nwu.local' -> 10.10.30.10
+    Record A: 'srv1.nwu.local' -> 10.10.30.10
+
+Upload the file /part1/hybrid/website/index.html to the HTTP service.
+Expected test:
+  From PC-Student-1 open Web Browser -> http://www.nwu.local or http://10.10.30.10
+  You should see the welcome page.
