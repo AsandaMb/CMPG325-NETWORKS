@@ -9,34 +9,32 @@
 
 ---
 
-## 0) Preparation (VS Code + Packet Tracer)
-- Create this repo folder on your PC. Open it in **VS Code**.
-- Open Packet Tracer and set **Preferences → Interface → Always show device names**.
-- Keep the files in `part1/configs` and copy/paste to your routers/switches.
+## 0) Preparation using VS Code & Packet Tracer
+- Create this repo folder on your PC, Open it with VS Code.
+- Open Packet Tracer and set "Preferences → Interface → Always show device names.
 
----
 
-## 1) Five basic topologies (quick builds)
-Each folder contains a `.ptk` diagram (rendered on GitHub). Recreate them in Packet Tracer with 3–5 devices each and straight‑through copper links.
+PART 1: Five basic topologies (quick builds)
+Each folder contains a `.ptk` diagram (rendered on GitHub).
+Recreate them in Packet Tracer with 3–5 devices each and use straight‑through copper links.
 
-### 1.1 Bus
-- 1 switch acts as a shared medium; connect PC1—PC3 in a line.
+# 1.1 Bus
+- 2 switches that acts as a shared medium; connect PC1—PC4 vertical to each other  and horizontal to that connect PC2 and PC3 vertical to each other.
 - Assign IPs in 192.168.1.10 and test pings.
 
-### 1.2 Mesh
-- Use three routers in a triangle; run static routes or RIP for simplicity.
-- Prove any single link failure still preserves connectivity.
+# 1.2 Mesh
+- Use 4 switces in a square and interconnect
+- Prove that every device has a direct path
 
-### 1.3 Star
-- 1 central switch with 3–4 PCs as spokes; single broadcast domain.
+# 1.3 Star
+- 1 central switch with 5 PCs as spokes; single broadcast domain.
 
 ### 1.4 Ring
-- 4 routers in a ring; configure static routes with two available paths.
+- 6 switches in a ring; configure static routes with two available paths.
 
 ### 1.5 Extended Star
 - 1 core switch uplinks to two access switches; PCs hang off each access switch.
-
-Document a **short paragraph** per topology describing benefits/trade‑offs and include a screenshot of successful pings.
+  Include a screenshot of successful pings.
 
 ---
 
