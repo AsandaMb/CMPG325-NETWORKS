@@ -102,7 +102,7 @@ R-CORE forwards unknown traffic to the **ISP** (simulated by a stub router).
    - `tracert 8.8.8.8` should show R-BR → R-CORE → ISP.
    - Load `http://www.nwu.local` (proves DNS traversal towards VLAN30).
 
-Add screenshots to `part 2/ecpected screenshots/` and reference them in your README.
+Add screenshots to `part 2/expected screenshots/` and reference them in your README.
 Part 2 includes configurations and a READme file that includes documentations
 
 
