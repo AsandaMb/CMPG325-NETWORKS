@@ -1,13 +1,13 @@
-# CMPG325-NETWORKS
-# Part I — Network Topologies Design & Simulation (60%)
+#CMPG325-NETWORKS
+# Part | — Network Topologies Design & Simulation (60%)
 
 ## What to build
-1. **Five basic topologies** in Packet Tracer: **Bus, Mesh, Star, Ring, Extended Star**  
-2. **One hybrid topology** that integrates elements above, **IPv4 & IPv6**, **VLAN segmentation**, **HTTP/DNS/DHCP server**, and **basic security**.
-3. Provide **documentation** (README, IP tables, screenshots) and **configuration notes in ,cfg fomat**.
+1. Five basic topologies** in Packet Tracer: Bus, Mesh, Star, Ring, Extended Start 
+2. One hybrid topology that integrates all of these elements: IPv4 & IPv6, VLAN segmentation, HTTP/DNS/DHCP server(atleast one of these) and basic security.
+3. Provide **documentation** (README, IP tables, screenshots) and **configuration notes in cfg fomat**.
 > Server choice: **HTTP** (with DNS).
 
----
+----
 
 ## 0) Preparation using VS Code & Packet Tracer
 - Create this repo folder on your PC, Open it with VS Code.
@@ -15,7 +15,7 @@
 
 
 PART 1: Five basic topologies (quick builds)
-Each folder contains a `.ptk` diagram (rendered on GitHub).
+The folder named 5 topologies includes 5 `.ptk` diagram (rendered on GitHub).
 Recreate them in Packet Tracer with 3–5 devices each and use straight‑through copper links.
 
 # 1.1 Bus
@@ -35,6 +35,8 @@ Recreate them in Packet Tracer with 3–5 devices each and use straight‑throug
 ### 1.5 Extended Star
 - 1 core switch uplinks to two access switches; PCs hang off each access switch.
   Include a screenshot of successful pings.
+
+The folder includes an expected screenshots word document that includes the tested ping of every topology included
 
 ---
 
