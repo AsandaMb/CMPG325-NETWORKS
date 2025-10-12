@@ -51,16 +51,16 @@ Use the addressing/VLAN plan from `docs/ip_tables.csv` and `docs/vlan_plan.csv`.
 - Serial links: R-CORE ↔ R-BR1, R-CORE ↔ R-BR2
 
 ### 2.2 Switch (S-CORE)
-Paste `part1/configs/S-CORE.cfg`.
+Paste `part1/configurations/S-CORE.cfg`.
 
 ### 2.3 Core Router (R-CORE) — Router on a Stick
-Paste `part1/configs/R-CORE.cfg`.
+Paste `part1/hybrid topology/configurations/R-CORE.cfg`.
 
 ### 2.4 Branch routers
-Paste `part1/configs/R-BR1.cfg` and `part1/configs/R-BR2.cfg`.
+Paste `part1/hybrid topology/configurations/R-BR1.cfg` and `part1/configs/R-BR2.cfg`.
 
 ### 2.5 Server (SRV1)
-Follow `part1/configarations/Server-HTTP.txt` and upload `part1/hybrid topology/website/index.html`.
+Follow `part1/hybrid topology/configurations/Server-HTTP.txt` and upload `part1/hybrid topology/website/index.html`.
 
 ### 2.6 Security hardening (basic)
 - `no ip http server` on routers (unless required).
@@ -74,13 +74,10 @@ Replicate the images in `assets/expected_screens/`:
 - `show ip route` on R-CORE
 - `tracert 8.8.8.8` from a PC (via default route)
 
-Place your screenshots in `hybrid topology/expected images/` when done.
-
----
-
 ## 3) Evidence & GitHub
 - Commit all configs, CSV tables, and screenshots.
 - In the README, link to your test screenshots and include a short reflection (what worked, problems, fixes).
+Place your screenshots in `hybrid topology/expected images/` when done.
 
 
 # Part II — Configure Default Routes to a Central Router (20%)
@@ -89,7 +86,7 @@ Goal: All branch LANs use **R-CORE** as their path to the Internet.
 R-CORE forwards unknown traffic to the **ISP** (simulated by a stub router).
 
 ## Steps
-1. On **R-BR1** and **R-BR2**, configure a default route *towards R-CORE*:
+1. On **R-BR1** and **R-BR2**, configure a default route *towards R-CORE* the main router:
    ```
    R-BR1(config)# ip route 0.0.0.0 0.0.0.0 10.255.1.1
    R-BR1(config)# ipv6 route ::/0 2001:DB8:255:1::1
@@ -105,6 +102,6 @@ R-CORE forwards unknown traffic to the **ISP** (simulated by a stub router).
    - `tracert 8.8.8.8` should show R-BR → R-CORE → ISP.
    - Load `http://www.nwu.local` (proves DNS traversal towards VLAN30).
 
-Add screenshots to `assets/my_screens/` and reference them in your README.
+Add screenshots to `part 2/ecpected screenshots/` and reference them in your README.
 
 
