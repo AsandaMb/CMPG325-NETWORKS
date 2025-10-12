@@ -60,7 +60,7 @@ Paste `part1/configs/R-CORE.cfg`.
 Paste `part1/configs/R-BR1.cfg` and `part1/configs/R-BR2.cfg`.
 
 ### 2.5 Server (SRV1)
-Follow `part1/configs/Server-HTTP.txt` and upload `part1/hybrid/website/index.html`.
+Follow `part1/configarations/Server-HTTP.txt` and upload `part1/hybrid topology/website/index.html`.
 
 ### 2.6 Security hardening (basic)
 - `no ip http server` on routers (unless required).
@@ -74,7 +74,7 @@ Replicate the images in `assets/expected_screens/`:
 - `show ip route` on R-CORE
 - `tracert 8.8.8.8` from a PC (via default route)
 
-Place your screenshots in `assets/my_screens/` when done.
+Place your screenshots in `hybrid topology/expected images/` when done.
 
 ---
 
