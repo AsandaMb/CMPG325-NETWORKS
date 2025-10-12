@@ -29,10 +29,10 @@ Recreate them in Packet Tracer with 3–5 devices each and use straight‑throug
 # 1.3 Star
 - 1 central switch with 5 PCs as spokes; single broadcast domain.
 
-### 1.4 Ring
+# 1.4 Ring
 - 6 switches in a ring; configure static routes with two available paths.
 
-### 1.5 Extended Star
+# 1.5 Extended Star
 - 1 core switch uplinks to two access switches; PCs hang off each access switch.
   Include a screenshot of successful pings.
 
