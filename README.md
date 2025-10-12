@@ -41,6 +41,7 @@ The folder includes an expected screenshots word document that includes the test
 ---
 
 ## 2) Hybrid Campus + Branches (full build)
+All the needed documents are avalaibale in the hybrid topology zip folder
 Use the addressing/VLAN plan from `docs/ip_tables.csv` and `docs/vlan_plan.csv`.
 
 ### 2.1 Devices & links
